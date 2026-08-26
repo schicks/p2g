@@ -14,6 +14,11 @@ GitHub: rich-text multiplayer editing backed by a real git branch/PR, no
 recurring server cost. See [Collaborative Session Prototype](#session-prototype)
 for what's implemented so far.
 
+> Built starting from Holepunch's
+> [`hello-pear-electron`](https://github.com/holepunchto/hello-pear-electron)
+> template, which the rest of this README (below the Collaborative Session
+> Prototype section) documents.
+
 ## Table of Contents
 
 - [Collaborative Session Prototype](#session-prototype)
