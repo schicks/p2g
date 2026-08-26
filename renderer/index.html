@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Pear</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: linear-gradient(135deg, #21c437 0%, #0e4f15 100%);
+        color: white;
+      }
+      h1 {
+        font-size: 48px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      #update-btn {
+        display: none;
+        margin-top: 20px;
+        padding: 12px 24px;
+        font-size: 18px;
+        border: 2px solid white;
+        border-radius: 8px;
+        background: green;
+        color: white;
+        cursor: pointer;
+      }
+      #update-btn:hover {
+        background: greenyellow;
+      }
+      .container {
+        text-align: center;
+      }
+      .session {
+        margin-top: 32px;
+        text-align: left;
+        width: 480px;
+      }
+      .session textarea {
+        width: 100%;
+        height: 120px;
+        font-family: monospace;
+        font-size: 14px;
+        box-sizing: border-box;
+        padding: 8px;
+      }
+      .session pre {
+        background: rgba(0, 0, 0, 0.25);
+        padding: 8px;
+        white-space: pre-wrap;
+        word-break: break-all;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="v">v</h1>
+      <button id="update-btn">Apply update</button>
+      <div class="session">
+        <textarea id="editor" placeholder="Type markdown here..."></textarea>
+        <p>Synced from Automerge doc via local hypercore:</p>
+        <pre id="synced-doc"></pre>
+        <pre id="core-info"></pre>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
